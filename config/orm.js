@@ -39,8 +39,8 @@ var orm = {
       cb(result);
     });
   },
-  insertOne: function(burger_name, cb) { 
-    var queryString = "INSERT INTO " + burger_name;
+  insertOne: function(table, cb) { 
+    var queryString = "INSERT INTO " + table;
 
     queryString += " (";
     queryString += cols.toString();
